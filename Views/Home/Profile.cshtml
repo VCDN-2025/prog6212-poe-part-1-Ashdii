@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Profile";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="card shadow mt-4" style="max-width: 400px;">
+    <div class="card-body">
+        <h5 class="card-title">👤 @ViewData["UserName"]</h5>
+        <h6 class="card-subtitle mb-2 text-muted">@ViewData["Role"]</h6>
+        <p class="card-text">
+            <strong>Email:</strong> @ViewData["Email"] <br />
+            <strong>Last Login:</strong> @ViewData["LastLogin"]
+        </p>
+    </div>
+</div>
+
